@@ -1,3 +1,9 @@
-This project explain the various life cycle method React.
-You can see the function order in which the function is getting called in the console.
- 
+To Start the project:
+
+Clone the directory
+
+yarn install.
+yarn start
+
+
+you can see the project at port 3000 
