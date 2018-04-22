@@ -1,0 +1,16 @@
+{
+  "detailViewData":[
+    {
+      "name": "DOLO 650mg",
+      "price": "10 Rs",
+      "nutionsContent": {
+        "Vitamin": "100mg",
+        "mineral": "200mg",
+        "iron": "300mg"
+      },
+      "Age": "10-50",
+      "Note": "Patient Suffering from Heart problem's, Kindeny, pregnant women are not adviced to take.",
+      "ManufactedBy": "Abc Pharmacy India"
+    }
+  ]
+}
