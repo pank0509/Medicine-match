@@ -63,9 +63,9 @@ class DetailView extends React.Component {
                             <div style={{ fontWeight: '600', paddingRight: '3%', fontSize: '1.5rem' }}>nutions content</div>
                             <div style={{ display: 'flex' }}>
                                 <div style={{ marginLeft: '3%' }}>
-                                    <div style={{ fontWeight: '550', paddingRight: '3%', width: '100%', fontSize: '1.2rem' }}>Vitamin : </div>
-                                    <div style={{ fontWeight: '550', paddingRight: '3%', width: '100%', fontSize: '1.2rem' }}>Mineral : </div>
-                                    <div style={{ fontWeight: '550', paddingRight: '3%', width: '100%', fontSize: '1.2rem' }}>Iron : </div>
+                                    <div style={{ fontWeight: '550', paddingRight: '3%', width: '100%', fontSize: '1.2rem' }}>Vitamin</div>
+                                    <div style={{ fontWeight: '550', paddingRight: '3%', width: '100%', fontSize: '1.2rem' }}>Mineral</div>
+                                    <div style={{ fontWeight: '550', paddingRight: '3%', width: '100%', fontSize: '1.2rem' }}>Iron</div>
                                 </div>
                                 <div style={{ marginLeft: '3%' }}>
                                     <div>{value.nutionsContent.Vitamin}</div>

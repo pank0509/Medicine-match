@@ -3,22 +3,26 @@
     {
       "age": "20-50",
       "name": "Dolo 650 mg",
-      "price": "12 Rs"
+      "price": "12 Rs",
+      "id": 1
     },
     {
       "age": "20-50",
       "name": "paracetamol 650",
-      "price": "20 Rs"
+      "price": "20 Rs",
+      "id": 2
     },
     {
       "age": "20-50",
       "name": "Penten 500mg",
-      "price": "25 Rs"
+      "price": "25 Rs",
+      "id": 3
     },
     {
       "age": "20-50",
       "name": "Penten 500mg",
-      "price": "25 Rs"
+      "price": "25 Rs",
+      "id": 4
     }
   ]
 }

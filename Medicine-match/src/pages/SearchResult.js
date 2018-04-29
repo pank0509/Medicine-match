@@ -11,6 +11,7 @@ class SearchResult extends React.Component {
     constructor(props){
         super(props);
         this.state = {
+            showLocation : false,
             dataForCard : {},
             value: 'Age',
         }
@@ -30,7 +31,12 @@ class SearchResult extends React.Component {
     handleChange = (event, index, value) => this.setState({ value });
 
     whenCardClicked = () => {
-      this.props.history.push('/detail-view');
+        console.log('clicked div');
+        this.props.history.push('/detail-view');
+    };
+    showTheLocation = () => {
+        console.log('clicked nav');
+        this.props.history.push('map');
     };
     render(){
         const data = this.state.dataForCard.cardData ? this.state.dataForCard.cardData : [];
@@ -77,6 +83,7 @@ class SearchResult extends React.Component {
                                  paddingBottom: '1%',
                                  paddingTop: '1%'
                              }}
+                             key={value.id}
                              onClick={this.whenCardClicked}
                         >
                             <div style={{display: 'flex', justifyContent: 'space-between'}}>
@@ -97,7 +104,7 @@ class SearchResult extends React.Component {
                                     >
                                         Age :
                                     </div>
-                                    <div style={{ marginTop: '5px', marginLeft: '3%' }}>{value.age}</div>
+                                    <div style={{ marginTop: '5px', marginLeft: '3%' }}>{`${value.age} years`}</div>
                                 </div>
                                 <div
                                     style={{
@@ -118,10 +125,10 @@ class SearchResult extends React.Component {
                                     {value.name}
                                 </div>
                                 <div style={{ fontSize: '1.5rem', fontWeight: '550' }}  >
-                                    {value.price}
+                                    <div>{`Price : ${value.price}`}</div>
                                 </div>
                                 <div>
-                                    <Place style={{color: '#FF5B03'}}/>
+                                    <Place style={{color: '#FF5B03', zIndex: '100'}} data-for='global'/>
                                 </div>
                             </div>
                         </div>
